@@ -36,7 +36,8 @@ namespace _23Febrero21
             this.lblTrackHorizontal = new System.Windows.Forms.Label();
             this.trcBrVerticalY = new System.Windows.Forms.TrackBar();
             this.trcBrHorizontalX = new System.Windows.Forms.TrackBar();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTrackHorizontalX = new System.Windows.Forms.Label();
+            this.lblTrackVerticalY = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcBrVertical)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcBrHorizontal)).BeginInit();
@@ -72,20 +73,20 @@ namespace _23Febrero21
             // lblTrackVertical
             // 
             this.lblTrackVertical.AutoSize = true;
-            this.lblTrackVertical.Location = new System.Drawing.Point(35, 159);
+            this.lblTrackVertical.Location = new System.Drawing.Point(73, 494);
             this.lblTrackVertical.Name = "lblTrackVertical";
-            this.lblTrackVertical.Size = new System.Drawing.Size(35, 13);
+            this.lblTrackVertical.Size = new System.Drawing.Size(13, 13);
             this.lblTrackVertical.TabIndex = 3;
-            this.lblTrackVertical.Text = "label1";
+            this.lblTrackVertical.Text = "0";
             // 
             // lblTrackHorizontal
             // 
             this.lblTrackHorizontal.AutoSize = true;
             this.lblTrackHorizontal.Location = new System.Drawing.Point(399, 540);
             this.lblTrackHorizontal.Name = "lblTrackHorizontal";
-            this.lblTrackHorizontal.Size = new System.Drawing.Size(35, 13);
+            this.lblTrackHorizontal.Size = new System.Drawing.Size(13, 13);
             this.lblTrackHorizontal.TabIndex = 4;
-            this.lblTrackHorizontal.Text = "label1";
+            this.lblTrackHorizontal.Text = "0";
             // 
             // trcBrVerticalY
             // 
@@ -104,21 +105,31 @@ namespace _23Febrero21
             this.trcBrHorizontalX.TabIndex = 6;
             this.trcBrHorizontalX.Scroll += new System.EventHandler(this.trcBrHorizontalX_Scroll);
             // 
-            // label1
+            // lblTrackHorizontalX
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(399, 588);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "label1";
+            this.lblTrackHorizontalX.AutoSize = true;
+            this.lblTrackHorizontalX.Location = new System.Drawing.Point(399, 588);
+            this.lblTrackHorizontalX.Name = "lblTrackHorizontalX";
+            this.lblTrackHorizontalX.Size = new System.Drawing.Size(13, 13);
+            this.lblTrackHorizontalX.TabIndex = 7;
+            this.lblTrackHorizontalX.Text = "0";
+            // 
+            // lblTrackVerticalY
+            // 
+            this.lblTrackVerticalY.AutoSize = true;
+            this.lblTrackVerticalY.Location = new System.Drawing.Point(9, 494);
+            this.lblTrackVerticalY.Name = "lblTrackVerticalY";
+            this.lblTrackVerticalY.Size = new System.Drawing.Size(13, 13);
+            this.lblTrackVerticalY.TabIndex = 8;
+            this.lblTrackVerticalY.Text = "0";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 615);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTrackVerticalY);
+            this.Controls.Add(this.lblTrackHorizontalX);
             this.Controls.Add(this.trcBrHorizontalX);
             this.Controls.Add(this.trcBrVerticalY);
             this.Controls.Add(this.lblTrackHorizontal);
@@ -147,7 +158,8 @@ namespace _23Febrero21
         private System.Windows.Forms.Label lblTrackHorizontal;
         private System.Windows.Forms.TrackBar trcBrVerticalY;
         private System.Windows.Forms.TrackBar trcBrHorizontalX;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTrackHorizontalX;
+        private System.Windows.Forms.Label lblTrackVerticalY;
     }
 }
 

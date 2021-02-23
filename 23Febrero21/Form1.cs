@@ -46,7 +46,6 @@ namespace _23Febrero21
         private void trcBrHorizontal_Scroll(object sender, EventArgs e)
         {
             lblTrackHorizontal.Text = Convert.ToString(trcBrHorizontal.Value);
-
             SolidBrush brocha = new SolidBrush(Color.Aquamarine);
             papel.Clear(Color.White);
             papel.FillEllipse(brocha, 0, 0, trcBrHorizontal.Value, trcBrVertical.Value);
@@ -62,6 +61,7 @@ namespace _23Febrero21
 
         private void trcBrVerticalY_Scroll(object sender, EventArgs e)
         {
+            lblTrackVerticalY.Text = Convert.ToString(trcBrVerticalY.Value);
             SolidBrush brocha = new SolidBrush(Color.Aquamarine);
             papel.Clear(Color.White);
             papel.FillEllipse(brocha, trcBrHorizontalX.Value, trcBrVerticalY.Value, trcBrHorizontal.Value, trcBrVertical.Value);
@@ -69,6 +69,7 @@ namespace _23Febrero21
 
         private void trcBrHorizontalX_Scroll(object sender, EventArgs e)
         {
+            lblTrackHorizontalX.Text = Convert.ToString(trcBrHorizontalX.Value);
             SolidBrush brocha = new SolidBrush(Color.Aquamarine);
             papel.Clear(Color.White);
             papel.FillEllipse(brocha, trcBrHorizontalX.Value, trcBrVerticalY.Value, trcBrHorizontal.Value, trcBrVertical.Value);
